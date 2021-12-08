@@ -14,6 +14,7 @@ import java.util.ArrayList;
         @PostMapping("/api/todo")
         public void addTodo (@RequestParam("message") String message, @RequestParam("author") String author){
             this.todoList.add(new Todo(message, author));
+            System.out.println(todoList);
         }
 
         @GetMapping("/api/todo")
