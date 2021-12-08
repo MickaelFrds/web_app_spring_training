@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>fr.lernejo</groupId>
-    <artifactId>maven_training</artifactId>
+    <artifactId>web_app_spring_training</artifactId>
     <version>1.0.0-SNAPSHOT</version>
 
     <properties>
@@ -29,7 +29,15 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-            <!--(1)-->
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jdbc</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>42.3.0</version>
         </dependency>
     </dependencies>
     <build>
